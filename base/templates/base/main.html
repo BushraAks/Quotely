@@ -27,7 +27,7 @@
                 <img src="{% static 'base/images/logo.png' %}" alt="logo">
             </div>
         </header>
-        
+
         <button type="button" class="add-quote" data-bs-toggle="modal" data-bs-target="#exampleModal">
             Add Quote
         </button>
@@ -35,8 +35,8 @@
             {% for post in posts %}
             <div class="card glassmorphism">
                 <img id="image" src="{{post.image.url}}" alt="{{pots.author}}">
-                <h class="content"> {{post.author}} </h>
-                <p class="writer">{{post.content}}</p>
+                <p class="writer">"{{post.content}}"</p>
+                <h class="content"> {{post.author}}~ </h>
             </div>
             {% endfor %}
         </div>

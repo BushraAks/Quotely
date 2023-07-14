@@ -86,7 +86,10 @@ body {
   width: 290px;
   height: 340px;
   border-radius: 25px;
-  padding: 20px;
+  padding: 20px 20px 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #menu-icon {
